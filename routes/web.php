@@ -151,3 +151,22 @@ Route::get('/mahasiswa', function () {
     "mahasiswa02", "mahasiswa03", "mahasiswa04"));    
     });
 
+
+//routes lprak 3
+Route::get('/mahasiswa', function () {
+    $nama = 'Elon Musk Batubara';
+    $nilai = 75;
+    return view('mahasiswa', compact('nama', 'nilai'));
+});
+
+Route::get('/mahasiswa', function () {
+    $nama = 'Vladimir Putin huhah';
+    $nilai = [];
+    return view('mahasiswa', compact('nama', 'nilai'));
+});
+
+Route::get('mahasiswa', function () {
+    $nama = 'Tya Kirana Putri';
+    $nilai = [80, 64, 30, 76, 95];
+    return view('mahasiswa', compact('nama', 'nilai'));
+});
